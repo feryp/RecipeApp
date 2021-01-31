@@ -5,9 +5,9 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.ferrtama.recipeapp.dao.RecipeDao
-import com.ferrtama.recipeapp.entities.Recipies
+import com.ferrtama.recipeapp.entities.Recipes
 
-@Database(entities = [Recipies::class], version = 1, exportSchema = false)
+@Database(entities = [Recipes::class], version = 1, exportSchema = false)
 abstract class RecipeDatabase: RoomDatabase() {
     companion object{
         var recipesDatabase:RecipeDatabase? = null
